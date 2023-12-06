@@ -72,7 +72,7 @@ export default function ComponentList({ categoryData }) {
         },
     ]
     return (
-        <div className="bg-white mx-auto px-8 md:px-36 pb-8 lg:pb-12">
+        <div className="px-8 pb-8 mx-auto bg-white md:px-36 lg:pb-12">
             <ul className="space-y-8">
                 <li className="space-y-4">
                     <ul className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
@@ -80,10 +80,11 @@ export default function ComponentList({ categoryData }) {
                             return (
                                 <li key={i}>
                                     <Link href="/components/alerts">
-                                        <div className={`group relative block h-full   before:absolute before:inset-0 before:rounded-lg before:border-2 before:border-dashed before:border-gray-900`}>
-                                            <div className={`rounded-lg border-2 border-gray-900 ${colors[i % 17].background} ${colors[i % 17].color} transition group-hover:-translate-y-2 group-hover:-translate-x-2`}>
+                                        <div className={`group relative block h-full`}>
+                                            {/* <div className={`rounded-lg skew-x-2 skew-y-2 ${colors[i % 17].background} ${colors[i % 17].color} transition group-hover:-translate-y-2 group-hover:-translate-x-2`}> */}
+                                            <div className={`rounded-lg -skew-x-2  skew-y--skew-x-2  ${colors[i % 17].background} ${colors[i % 17].color} group-hover:-translate-y-1 group-hover:-translate-x-1 transition group-hover:shadow-[0_10px_20px_rgba(0,0,0,0.2)]`}>
                                                 <div className="p-4 sm:p-6">
-                                                    <h2 className="mt-4  sm:text-xl  font-bold">{r.title}</h2>
+                                                    <h2 className="mt-4 font-bold sm:text-xl">{r.title}</h2>
                                                     <p className="mt-1 text-md">4 Components</p>
                                                 </div>
                                             </div>

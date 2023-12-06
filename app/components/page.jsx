@@ -4,7 +4,7 @@ import React from 'react'
 
 export default function Component() {
   return (
-    <div className='bg-white py-8'>
+    <div className='py-8 bg-white'>
       <PageHeading heading='Components' subHeading='Free Tailwind CSS Application UI Components' content='Working on an CMS, eCommerce platform or admin hub? SynergyUI has a growing range of application UI Tailwind CSS components, that will help you build an accessible, responsive application for your next project.'/>
     </div>
   )

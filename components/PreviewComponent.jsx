@@ -3,13 +3,13 @@ import React from 'react'
 export default function PreviewComponent() {
     return (
 
-        <div className='mx-auto xl:max-w-[1348px]'>
-            <div className='text-gray-900 text-4xl font-extrabold pb-8'>Alert Components</div>
+        <div className='mx-auto xl:max-w-7xl'>
+            <div className='pb-8 text-4xl font-extrabold text-gray-900'>Alert Components</div>
             <ul className="space-y-8 lg:space-y-12 ">
                 <li>
                     <div id="component-1">
                         <div className="space-y-4">
-                            <h2 className="text-lg font-bold text-gray-900 sm:text-xl"><a href="#component-1" className="group relative inline-block"><span aria-hidden="true" className="hidden group-hover:opacity-25 lg:absolute lg:inset-y-0 lg:-left-6 lg:block lg:opacity-0 lg:transition">#</span>Popup</a></h2>
+                            <h2 className="text-lg font-bold text-gray-900 sm:text-xl"><a href="#component-1" className="relative inline-block group"><span aria-hidden="true" className="hidden group-hover:opacity-25 lg:absolute lg:inset-y-0 lg:-left-6 lg:block lg:opacity-0 lg:transition">#</span>Popup</a></h2>
                             <div className="lg:flex lg:items-end">
                                 <div className="flex flex-wrap items-end gap-4"><button><span className="inline-flex items-center gap-1.5 rounded-lg border-2 px-3 py-1.5 border-gray-900 bg-white text-gray-900 hover:bg-gray-900 hover:text-white"><span aria-hidden="true" role="img" className="text-sm">👀</span><span className="text-xs font-medium">View</span></span></button><button className="hidden sm:block"><span className="inline-flex items-center gap-1.5 rounded-lg border-2 px-3 py-1.5 border-gray-900 bg-white text-gray-900 hover:bg-gray-900 hover:text-white"><span aria-hidden="true" role="img" className="text-sm">📋</span><span className="text-xs font-medium">Copy</span></span></button><button><span className="inline-flex items-center gap-1.5 rounded-lg border-2 px-3 py-1.5 border-gray-900 bg-white text-gray-900 hover:bg-gray-900 hover:text-white"><span aria-hidden="true" role="img" className="text-sm">🌞</span><span className="text-xs font-medium">Light</span></span></button><button><span className="inline-flex items-center gap-1.5 rounded-lg border-2 px-3 py-1.5 border-gray-900 bg-white text-gray-900 hover:bg-gray-900 hover:text-white"><span aria-hidden="true" role="img" className="text-sm">👉</span><span className="text-xs font-medium">LTR</span></span></button></div>
                                 <div className="hidden lg:flex lg:flex-1 lg:items-end lg:justify-end lg:gap-4"><button><span className="inline-flex items-center gap-1.5 rounded-lg border-2 px-3 py-1.5 border-gray-900 bg-white text-gray-900 hover:bg-gray-900 hover:text-white"><span aria-hidden="true" role="img" className="text-sm">📱</span><span className="text-xs font-medium">Mobile</span></span></button><button><span className="inline-flex items-center gap-1.5 rounded-lg border-2 px-3 py-1.5 border-gray-900 bg-white text-gray-900 hover:bg-gray-900 hover:text-white"><span aria-hidden="true" role="img" className="text-sm">🐛</span><span className="text-xs font-medium">Small</span></span></button><button><span className="inline-flex items-center gap-1.5 rounded-lg border-2 px-3 py-1.5 border-gray-900 bg-white text-gray-900 hover:bg-gray-900 hover:text-white"><span aria-hidden="true" role="img" className="text-sm">🦭</span><span className="text-xs font-medium">Medium</span></span></button><button><span className="inline-flex items-center gap-1.5 rounded-lg border-2 px-3 py-1.5 border-gray-900 bg-white text-gray-900 hover:bg-gray-900 hover:text-white"><span aria-hidden="true" role="img" className="text-sm">🐴</span><span className="text-xs font-medium">Large</span></span></button><button><span className="inline-flex items-center gap-1.5 rounded-lg border-2 px-3 py-1.5 border-gray-900 text-white bg-gray-900"><span aria-hidden="true" role="img" className="text-sm">🌕</span><span className="text-xs font-medium">Full</span></span></button></div>
@@ -71,7 +71,7 @@ export default function PreviewComponent() {
                                     <div className="relative" hidden="">
                                         <div className="absolute right-4 top-4">
                                             <label for="CodeType" className="sr-only">Code Type</label>
-                                            <select id="CodeType" className="w-32 rounded-lg border-gray-700 bg-gray-800 text-white sm:text-sm">
+                                            <select id="CodeType" className="w-32 text-white bg-gray-800 border-gray-700 rounded-lg sm:text-sm">
                                                 <option value="html">HTML</option>
                                                 <option value="jsx">JSX</option>
                                                 <option value="vue">Vue</option>
