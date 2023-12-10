@@ -1,0 +1,1 @@
+export const apiURL = 'https://synergyapi.178765.xyz/'
