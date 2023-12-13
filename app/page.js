@@ -2,9 +2,10 @@ import ComponentList from '@/components/ComponentList'
 import PageHeading from '@/components/PageHeading'
 import Image from 'next/image'
 import Link from 'next/link'
+import { apiURL } from './constants'
 
 async function getCategoryData() {
-  const res = await fetch('https://synergyapi.178765.xyz/category/')
+  const res = await fetch(`${apiURL}/category/code_count`)
   if (!res.ok) {
     throw new Error('Failed to fetch data')
   }
