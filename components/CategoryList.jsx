@@ -85,7 +85,7 @@ export default function CategoryList({ categoryData }) {
                         {categoryData.data.map((r, i) => {
                             return (
                                 <li key={i}>
-                                    <Link href={`/components/${r.title}`}>
+                                    <Link href={`/components/${r.id}`}>
                                         <div className={`group relative block h-full`}>
                                             {/* <div className={`rounded-lg skew-x-2 skew-y-2 ${colors[i % 17].background} ${colors[i % 17].color} transition group-hover:-translate-y-2 group-hover:-translate-x-2`}> */}
                                             <div className={`rounded-lg -skew-x-2  skew-y--skew-x-2  ${colors[i % 17].background} ${colors[i % 17].color} group-hover:-translate-y-1 group-hover:-translate-x-1 transition group-hover:shadow-[0_10px_20px_rgba(0,0,0,0.2)]`}>
