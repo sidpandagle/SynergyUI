@@ -7,7 +7,7 @@ export default function AddCode({ categoryData, isModalOpen, setIsModalOpen }) {
     const { register, handleSubmit, reset } = useForm();
 
     const onSubmit = (formData) => {
-        axios.post(apiURL + 'code/', formData)
+        axios.post(apiURL + '/code/', formData)
             .then(function (response) {
                 setIsModalOpen(false);
                 reset();
