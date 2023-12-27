@@ -28,6 +28,7 @@ export default function AddCode({ categoryData, isModalOpen, setIsModalOpen }) {
                     <form onSubmit={handleSubmit(onSubmit)} className="relative overflow-hidden text-left transition-all transform bg-white rounded-lg shadow-xl sm:my-8 sm:w-full sm:max-w-lg">
                         <div className="px-4 pt-5 pb-4 bg-white sm:p-6 sm:pb-4">
                             <div className="sm:flex sm:items-start">
+                            {/* {JSON.stringify(categoryData)} */}
                                 <div className="w-full mt-3 text-center sm:ml-4 sm:mt-0 sm:text-left">
                                     <h3 className="text-base font-semibold leading-6 text-gray-900" id="modal-title">Add Component</h3>
                                     <div className="mt-2">
@@ -48,7 +49,7 @@ export default function AddCode({ categoryData, isModalOpen, setIsModalOpen }) {
                                                 {
                                                     categoryData.data.map((r, i) => {
                                                         return (
-                                                            <option key={i} value={Number(r.id)}>{r.title}</option>
+                                                            <option key={i} value={Number(r.id)}>{r.category}</option>
                                                         )
                                                     })
                                                 }

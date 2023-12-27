@@ -87,19 +87,19 @@ export default function ComponentList({category}) {
 
   return (
     <div className='max-w-sm mx-auto sm:max-w-lg md:max-w-2xl lg:max-w-4xl xl:max-w-7xl'>
-      <div className='pb-8 text-4xl font-extrabold text-gray-900 '>{category} Components</div>
+      {/* <div className='pb-8 text-4xl font-extrabold text-gray-900 '>{category.category_title} Components</div> */}
       <ul className="space-y-8 lg:space-y-12 ">
         {
-          componentList.map((r, i) => {
+          category.codes.map((r, i) => {
             return (
               <li key={i}>
                 <div id={`component-${i}`}>
                   <div className="space-y-4">
-                    <h2 className="text-lg font-bold text-gray-900 sm:text-xl"><a href="#component-1" className="relative inline-block group"><span aria-hidden="true" className="hidden group-hover:opacity-25 lg:absolute lg:inset-y-0 lg:-left-6 lg:block lg:opacity-0 lg:transition">#</span>{r.name}</a></h2>
+                    <h2 className="text-lg font-bold text-gray-900 sm:text-xl"><a href="#component-1" className="relative inline-block group"><span aria-hidden="true" className="hidden group-hover:opacity-25 lg:absolute lg:inset-y-0 lg:-left-6 lg:block lg:opacity-0 lg:transition">#</span>{r.title}</a></h2>
                     <div className="lg:flex lg:items-end">
                       <div className="flex flex-wrap items-end gap-4"><button onClick={() => setViewCode(!viewCode)}><span className="inline-flex items-center gap-1.5 rounded-lg border-2 px-3 py-1.5 border-gray-900 bg-white text-gray-900 hover:bg-gray-900 hover:text-white"><span className="text-xs font-medium">View</span>
                       </span></button>
-                        <button onClick={() => copyCode(r.htmlCode)} className="hidden sm:block"><span className="inline-flex items-center gap-1.5 rounded-lg border-2 px-3 py-1.5 border-gray-900 bg-white text-gray-900 hover:bg-gray-900 hover:text-white"><span className="text-xs font-medium">{copiedCode ? 'Copied' : 'Copy'}</span>
+                        <button onClick={() => copyCode(r.code)} className="hidden sm:block"><span className="inline-flex items-center gap-1.5 rounded-lg border-2 px-3 py-1.5 border-gray-900 bg-white text-gray-900 hover:bg-gray-900 hover:text-white"><span className="text-xs font-medium">{copiedCode ? 'Copied' : 'Copy'}</span>
                         </span></button>
                       </div>
                       <div className="hidden lg:flex lg:flex-1 lg:items-end lg:justify-end lg:gap-4">
@@ -122,7 +122,7 @@ export default function ComponentList({category}) {
                                                                         <link type="text/css" rel="Stylesheet" href="app/globals.css" />
                                                                         </head>
                                                                     <body>
-                                                                    ${r.htmlCode}
+                                                                    ${r.code}
                                                                     </body>
                                                                     </html>
                                     
@@ -134,7 +134,7 @@ export default function ComponentList({category}) {
                           viewCode &&
                           <div className={`h-96  lg:w-[100%] rounded-lg ring-2 ring-gray-900 lg:transition-all bg-white overflow-y-scroll`} >
                             <SyntaxHighlighter language="htmlbars" style={atomOneDark}>
-                              {r.htmlCode}
+                              {r.code}
                             </SyntaxHighlighter>
                           </div>
                         }

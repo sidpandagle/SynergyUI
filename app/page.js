@@ -18,7 +18,7 @@ export default async function Home() {
   return (
     <div className='text-gray-900 bg-white'>
       <PageHeading heading='HomePage' subHeading='Free Tailwind CSS Components' content='Working on an CMS, eCommerce platform or admin hub? SynergyUI has a growing range of Tailwind CSS components, that will help you build an accessible, responsive application for your next project.' />
-      <CategoryList categoryData={categoryData}/>
+       <CategoryList categoryData={categoryData}/>
     </div>
   )
 }

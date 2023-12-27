@@ -18,9 +18,9 @@ export default async function Category({ params }) {
     const codeData = await getCodesByCategoryId(categoryId);
     return (
       <div className="py-8 bg-white">
-        {/* {JSON.stringify(codeData)} */}
-          <PageHeading heading='Category' subHeading='Free Tailwind CSS Components' content='Working on an CMS, eCommerce platform or admin hub? SynergyUI has a growing range of Tailwind CSS components, that will help you build an accessible, responsive application for your next project.'/>
-          <ComponentList category={codeData.title} />
+          {/* <PageHeading heading={`${codeData.category_title} Components`} subHeading='Free Tailwind CSS Components' content='Working on an CMS, eCommerce platform or admin hub? SynergyUI has a growing range of Tailwind CSS components, that will help you build an accessible, responsive application for your next project.'/> */}
+          <PageHeading heading={`${codeData.category_title} Components`} content='Working on an CMS, eCommerce platform or admin hub? SynergyUI has a growing range of Tailwind CSS components, that will help you build an accessible, responsive application for your next project.'/>
+          <ComponentList category={codeData} />
       </div>
     )
 }
