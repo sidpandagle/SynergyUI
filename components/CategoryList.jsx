@@ -76,7 +76,7 @@ export default function CategoryList({ categoryData }) {
     ]
     return (
         <div className="px-8 pb-8 mx-auto bg-white md:px-36 lg:pb-12">
-            <div className='flex justify-center mb-8 text-center ' >
+            <div className='flex justify-end mb-8 text-center ' >
                 <div className='w-24 px-4 py-2 text-white bg-blue-500 rounded-sm cursor-pointer hover:bg-blue-600 hover:' onClick={() => setIsModalOpen(true)}>Add</div>
             </div>
             <ul className="space-y-8">
@@ -84,6 +84,7 @@ export default function CategoryList({ categoryData }) {
                     <ul className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
                         {categoryData.data.map((r, i) => {
                             return (
+                                r.code_count &&
                                 <li key={i}>
                                     <Link href={`/components/${r.id}`}>
                                         <div className={`group relative block h-full`}>
